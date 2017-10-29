@@ -130,11 +130,11 @@
 	<div id="fullpage" class="page-container" data-anchor="main">
 		<section class="section section-mob-full section__black top red-logo-up">
 			<div class="video">
-				 <video autoplay="autoplay" class="desktop" muted loop data-autoplay poster="img/d_01@2x-opt.jpg">
-					<source src="img/video/qoobi_cube_x264.mp4" type="video/mp4"/>
+				 <video class="desktop" autoplay="autoplay" muted loop data-autoplay poster="img/d_01@2x-opt.jpg">
+					<source src="img/video/qoobi_cube_x264.mp4" type="video/mp4">
 				</video> 
 					<video class="mobile-only" autoplay="autoplay" muted loop data-autoplay poster="img/d_01@2xblack-small828.jpg">
-					<source src="img/video/black.mp4" type="video/mp4"/>
+					<source src="img/video/black.mp4" type="video/mp4">
 				</video>	
 			</div>
 			<div class="winners-text">The GOLDEN WINNER
@@ -161,8 +161,8 @@
 					<video class="pink-video-desktop" autoplay="autoplay" muted loop data-autoplay poster="img/work@2x.jpg">
 						<source src="img/video/IMG_9358_x264.mp4" type="video/mp4"/>
 					</video>
-					<video class="pink-video" autoplay="autoplay" muted loop data-autoplay poster="img/work@2x.jpg">
-						<source src="img/video/pink-video.mp4" type="video/mp4"/>
+					<video class="pink-video" loop autoplay preload="auto">
+						<source src="img/video/pink-video.mp4" type="video/mp4">
 					</video>
 					<div class="date">
 						09.06.17
@@ -267,7 +267,7 @@
 				<video autoplay="autoplay" class="how-it-works__video" muted loop data-autoplay poster="img/how.jpg">
 					<source class="how-works-desktop" src="img/video/cut_01.mp4" type="video/mp4"></source>
 				</video>
-				<video autoplay="autoplay" class="how-works-mobile" muted loop data-autoplay poster="img/how.jpg">
+				<video class="how-works-mobile" loop autoplay preload="auto">
 					<source class="how-works-mobile" src="img/video/cut1mobile.mp4" type="video/mp4"></source>
 				</video>
 				</div>
@@ -558,6 +558,6 @@
 	<script src="js/TweenLite.min.js" ></script>
 <script src="js/CSSPlugin.min.js" ></script>
 <script src="js/TimelineMax.min.js" ></script>
-<script src="js/index.js"></script>
+<script src="js/index.js"></script> 
 </body>
 </html>
