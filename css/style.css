@@ -2221,8 +2221,13 @@ section.shown .order-btn {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
+    box-sizing: border-box;
+    height: auto;
+    
     }
-.view-side {
+
+
+    .view-side {
     -webkit-transform: scale(0.6);
         -ms-transform: scale(0.6);
             transform: scale(0.6);
@@ -3706,18 +3711,3 @@ footer {
     padding-right: 65px;
 }
 }
-/*.c {
- position:absolute;
-top:10px;
-left:300px;
-width:200%;
-height:300px; */
-/* clip:rect(0px, 1000px, 500px, 0px);здесь выставляйте свои параметры, сейчас блок двигается по горизонтальному контейнеру высотой в 300пк 
-}*/
-
-/* .b {
-background:blue;
-width:50px;
-height:50px;
-position:fixed;
-} */
