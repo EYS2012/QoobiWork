@@ -1078,19 +1078,28 @@ body.overflow {
     -ms-transform: translate(-50%, 0);
     transform: translate(-50%, 0)
 }
-
- @media (max-width:414px) {
+ 
+ .static-phone-mobile { 
+     display: none;
+ } 
+ 
+@media (max-width:414px) {
      .app { 
-        position: relative;
-        width: 100%;
-        height: 350px;
-        margin: 0 auto;
-        overflow: hidden;
+     position: relative;
+     width: 100%;
+     height: 350px;
+     margin: 0 auto;
+     overflow: hidden;
      
  } 
   
-   .static-phone { 
-      position: inherit;  
+ .static-phone-desktop {
+     display: none;
+ }
+   
+ .static-phone-mobile { 
+     display: block;   
+    position: inherit;  
       padding-top: 0px;
       left: 19%;  
       height: 100%;  
@@ -1688,22 +1697,22 @@ aside .section-title h2 {
     font-family: plumblight, sans-serif;
 }
 #how-it-works .video {
-    background: #fdfdfd;
+     /* background: #fdfdfd;  */
     margin-top:150px;   
     position: relative;
-    background: white;
+    background: white;  
 }
 
 
 #how-it-works .how-works-mobile {
     display: block;
     position: inherit;
-    /* transform: scale(1.15); */
-    /* left: 4%;      */
+    transform: scale(1.10); 
+    /* left: 4%; */
     height: 100%;    
     width: 100%;   
     -o-object-fit: cover;   
-       object-fit: cover;  
+    object-fit: cover;  
 
     }
    
@@ -1716,7 +1725,7 @@ aside .section-title h2 {
 
 @media (max-width:767px) {
     .left-block {
-         /* left: 10px;  */
+         /* left: 10px; */
          top: 150px; 
     }
 }
@@ -2223,7 +2232,7 @@ section.shown .order-btn {
                 align-items: center;
     box-sizing: border-box;
     height: auto;
-    
+    height: 100%;
     }
 
 
@@ -2784,6 +2793,8 @@ a.order-btn {
 }
 .pink-video {
     display: block;
+    object-fit: cover;
+  
 }
 }
 
@@ -3701,11 +3712,11 @@ footer {
     font-size: 11px;
     height: 30px; 
     width: 100%;
-    z-index: 20;
+    z-index: 50;
     /* flex-direction: column;
     align-self: flex-end;
     justify-content: flex-end;
-} */
+ */
 }
 .copyright-mobile__span {
     padding-right: 65px;
