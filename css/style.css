@@ -1991,30 +1991,14 @@ section.shown .order-btn {
     }
 }
 
-/* @media (max-width:414px) {
-    .row {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-    box-sizing: border-box;
-    height: auto;
-    height: 100%;
-    } */
+ @media (max-width:414px) {
 
-
-    /* .view-side {
+    .view-side {
     -webkit-transform: scale(0.6);
         -ms-transform: scale(0.6);
             transform: scale(0.6);
 }
-} */
+} 
 
 
 .row .item {
