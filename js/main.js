@@ -5585,18 +5585,11 @@ function(e, t) {
         }
     }
 }), 
-// $(window).on("load", function() {
-//     var e = $("#page-preloader"),
-//         t = $("body");
-//     e.delay(350).fadeOut("slow"), t.removeClass("overflow"), imgLoad()
-// }),
-
-$(window).on('load', function () {
-    $preloader = $('.loaderArea'),
-      $loader = $preloader.find('page-preloader');
-    $loader.fadeOut();
-    $preloader.delay(350).fadeOut('slow'), imgLoad()
-  }),
+$(window).on("load", function() {
+    var e = $("#page-preloader"),
+        t = $("body");
+    e.delay(350).fadeOut("slow"), t.removeClass("overflow"), imgLoad()
+}),
 
  $(document).ready(function() {
     $("#fullpage").fullpage({
